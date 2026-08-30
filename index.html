@@ -17,7 +17,6 @@
         h1 { margin: 0 0 10px 0; font-size: 2.2em; }
         .subtitle { font-size: 1.15em; opacity: 0.95; font-weight: 500; }
         
-        /* إخفاء العناوين الفرعية وصندوق البحث */
         h2, #search-container { display: none !important; }
 
         .quiz-status-bar { display: flex; justify-content: space-between; align-items: center; background: var(--card-bg); padding: 16px 22px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); border: 1px solid var(--border-color); }
@@ -35,7 +34,7 @@
         .option-item { display: flex; align-items: center; justify-content: space-between; padding: 14px 18px; margin-bottom: 12px; background-color: #f8fafc; border-radius: 8px; border: 2px solid var(--border-color); cursor: pointer; transition: all 0.2s ease; font-size: 1.05em; user-select: none; }
         .option-item:not(.disabled):hover { background-color: #edf2f7; border-color: #cbd5e1; transform: translateY(-1px); }
         .option-item.disabled { cursor: default; }
-        .check-icon { display: none !important; } /* إخفاء علامات الصح الافتراضية */
+        .check-icon { display: none !important; } 
 
         .option-item.correct-choice { background-color: var(--success-bg) !important; border-color: var(--success-color) !important; color: #196f3d !important; font-weight: 600; }
         .option-item.wrong-choice { background-color: var(--error-bg) !important; border-color: var(--error-color) !important; color: #922b21 !important; font-weight: 600; }
@@ -82,10 +81,1371 @@
     </div>
 
     <div id="quiz-questions">
-        
-        <!-- ========================================================= -->
-        <!-- ⚠️ ضع جميع أسئلتك هنا (الكروت الخاصة بالأسئلة بالكامل) ⚠️ -->
-        <!-- ========================================================= -->
+        <div class="question-card">
+            <div class="question-text">1. Which AI application helps intelligent systems understand and generate human language?</div>
+            <ul class="options-list">
+                <li class="option-item">Computer Vision</li>
+                <li class="option-item">Constraint Satisfaction Problems (CSP)</li>
+                <li class="option-item">Evolutionary Algorithms</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Natural Language Processing (NLP)</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">2. Early classical AI systems relied almost entirely on:</div>
+            <ul class="options-list">
+                <li class="option-item">Deep Learning</li>
+                <li class="option-item">Neural Networks</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Symbolic Reasoning and rules</li>
+                <li class="option-item">Unsupervised Machine Learning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">3. What is the primary focus of Artificial Intelligence?</div>
+            <ul class="options-list">
+                <li class="option-item">Building hardware</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Creating intelligent systems</li>
+                <li class="option-item">Creating websites</li>
+                <li class="option-item">Designing databases</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">4. AI is a branch of</div>
+            <ul class="options-list">
+                <li class="option-item">Biology</li>
+                <li class="option-item">Chemistry</li>
+                <li class="option-item">Civil Engineering</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Computer Science</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">5. The birth of AI occurred in</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>1950s</li>
+                <li class="option-item">1980s</li>
+                <li class="option-item">2012</li>
+                <li class="option-item">2022</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">6. Deep learning became prominent after</div>
+            <ul class="options-list">
+                <li class="option-item">1950</li>
+                <li class="option-item">1970</li>
+                <li class="option-item">1980</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>2012</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">7. Generative AI era is</div>
+            <ul class="options-list">
+                <li class="option-item">1950-1960</li>
+                <li class="option-item">1980-1990</li>
+                <li class="option-item">2000-2005</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>2022-2026</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">8. Which is NOT an AI capability?</div>
+            <ul class="options-list">
+                <li class="option-item">Decision Making</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Painting walls</li>
+                <li class="option-item">Planning</li>
+                <li class="option-item">Reasoning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">9. AI attempts to</div>
+            <ul class="options-list">
+                <li class="option-item">Eliminate computers</li>
+                <li class="option-item">Remove data</li>
+                <li class="option-item">Replace mathematics</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Simulate human abilities</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">10. Human intelligence learns mainly from</div>
+            <ul class="options-list">
+                <li class="option-item">Compilers</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Experience</li>
+                <li class="option-item">Networks</li>
+                <li class="option-item">Random numbers</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">11. Reasoning means</div>
+            <ul class="options-list">
+                <li class="option-item">Compiling code</li>
+                <li class="option-item">Formatting disks</li>
+                <li class="option-item">Printing documents</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Using knowledge to infer</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">12. Decision making uses</div>
+            <ul class="options-list">
+                <li class="option-item">Magic</li>
+                <li class="option-item">Nothing</li>
+                <li class="option-item">Random guessing</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Specific criteria</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">13. Learning includes</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Applying knowledge</li>
+                <li class="option-item">Deleting memory</li>
+                <li class="option-item">Formatting</li>
+                <li class="option-item">Ignoring experience</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">14. Knowledge representation helps</div>
+            <ul class="options-list">
+                <li class="option-item">Charge battery</li>
+                <li class="option-item">Increase RAM</li>
+                <li class="option-item">Play music</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Store knowledge</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">15. AI systems improve over time by</div>
+            <ul class="options-list">
+                <li class="option-item">Deleting memory</li>
+                <li class="option-item">Ignoring data</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Learning from data</li>
+                <li class="option-item">Using only fixed rules</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">16. AI transforms</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Many industries</li>
+                <li class="option-item">Only banking</li>
+                <li class="option-item">Only gaming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">17. Crop monitoring is an AI application in</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Agriculture</li>
+                <li class="option-item">Finance</li>
+                <li class="option-item">Gaming</li>
+                <li class="option-item">Retail</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">18. Predictive maintenance is used in</div>
+            <ul class="options-list">
+                <li class="option-item">Law</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Manufacturing</li>
+                <li class="option-item">Music</li>
+                <li class="option-item">Tourism</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">19. Computer vision deals with</div>
+            <ul class="options-list">
+                <li class="option-item">Media</li>
+                <li class="option-item">Compiling code</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Understanding images</li>
+                <li class="option-item">Writing essays</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">20. Speech recognition belongs to</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>AI capabilities</li>
+                <li class="option-item">Database systems</li>
+                <li class="option-item">Hardware</li>
+                <li class="option-item">OS</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">21. NLP stands for</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Natural Language Processing</li>
+                <li class="option-item">Natural Learning Process</li>
+                <li class="option-item">Network Link Protocol</li>
+                <li class="option-item">Neural Logic Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">22. Which AI application is primarily responsible for enabling computers to understand spoken or written human language?</div>
+            <ul class="options-list">
+                <li class="option-item">Computer Vision</li>
+                <li class="option-item">Expert Systems</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Natural Language Processing</li>
+                <li class="option-item">Robotics</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">23. Which of the following scenarios is MOST likely to require Computer Vision rather than Natural Language Processing?</div>
+            <ul class="options-list">
+                <li class="option-item">Answering spoken questions</li>
+                <li class="option-item">Classifying customer emails</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Detecting tumors in X-ray images</li>
+                <li class="option-item">Translating Arabic into English</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">24. A university wants to automatically classify thousands of student emails such as complaints, admissions, and registration. Which AI technology is MOST appropriate?</div>
+            <ul class="options-list">
+                <li class="option-item">Computer Vision</li>
+                <li class="option-item">Genetic Algorithms</li>
+                <li class="option-item">Image Segmentation</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Natural Language Processing</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">25. A university plans to automate student attendance using facial recognition. Which AI field is primarily required?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Computer Vision</li>
+                <li class="option-item">Database Management</li>
+                <li class="option-item">Expert Systems</li>
+                <li class="option-item">Natural Language Processing</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">26. Which AI application primarily relies on image processing techniques?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Computer Vision</li>
+                <li class="option-item">Flowchart Design</li>
+                <li class="option-item">Spam Email Filtering</li>
+                <li class="option-item">SQL Query Optimization</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">27. Which statement BEST describes an intelligent agent?</div>
+            <ul class="options-list">
+                <li class="option-item">A database used to store knowledge.</li>
+                <li class="option-item">A program that only executes predefined instructions.</li>
+                <li class="option-item">A programming language designed for AI.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>A system that perceives its environment and performs actions to achieve goals.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">28. An intelligent agent perceives its environment using:</div>
+            <ul class="options-list">
+                <li class="option-item">Actuators</li>
+                <li class="option-item">Compilers</li>
+                <li class="option-item">Databases</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Sensors</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">29. Human agent sensors include</div>
+            <ul class="options-list">
+                <li class="option-item">Battery</li>
+                <li class="option-item">CPU</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Eyes and ears</li>
+                <li class="option-item">Motors</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">30. In an intelligent agent, actuators are mainly used to:</div>
+            <ul class="options-list">
+                <li class="option-item">Analyze databases</li>
+                <li class="option-item">Perceive the environment</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Perform actions</li>
+                <li class="option-item">Store knowledge</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">31. A warehouse robot receives information from sensors, decides the best path to a package, and moves toward it. Which sequence correctly represents the intelligent agent cycle?</div>
+            <ul class="options-list">
+                <li class="option-item">Action → Perception → Goal</li>
+                <li class="option-item">Decision → Perception → Learning</li>
+                <li class="option-item">Goal → Action → Perception</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Perception → Decision → Action</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">32. An AI problem in which the system does not have complete information about the environment is described as:</div>
+            <ul class="options-list">
+                <li class="option-item">Deterministic</li>
+                <li class="option-item">Fully observable</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Partially observable</li>
+                <li class="option-item">Static</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">33. What is an algorithm?</div>
+            <ul class="options-list">
+                <li class="option-item">A database query language</li>
+                <li class="option-item">A graphical chart using standard symbols</li>
+                <li class="option-item">A specific hardware requirement for AI</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>A step-by-step procedure for solving a problem</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">34. Problem solving generally begins with:</div>
+            <ul class="options-list">
+                <li class="option-item">Choosing random outputs</li>
+                <li class="option-item">Deleting the code</li>
+                <li class="option-item">Testing the final program</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Understanding the problem</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">35. After understanding a software problem, the next major activity is to:</div>
+            <ul class="options-list">
+                <li class="option-item">Delete the requirements</li>
+                <li class="option-item">Ignore the inputs</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Plan the solution</li>
+                <li class="option-item">Stop development</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">36. A logistics company develops an AI agent that selects delivery routes. The agent evaluates several possible paths before choosing one. This process primarily demonstrates:</div>
+            <ul class="options-list">
+                <li class="option-item">Data Storage</li>
+                <li class="option-item">Declarative Programming</li>
+                <li class="option-item">Knowledge Representation</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Problem Solving through Search</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">37. Which sub-component of AI problem formulation acts as the starting point of the problem?</div>
+            <ul class="options-list">
+                <li class="option-item">Actions</li>
+                <li class="option-item">Goal Test</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Initial State</li>
+                <li class="option-item">Transition Model</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">38. The state from which an AI problem begins is called the:</div>
+            <ul class="options-list">
+                <li class="option-item">Cost state</li>
+                <li class="option-item">Final action</li>
+                <li class="option-item">Goal state</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Initial state</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">39. An AI robot is currently located in Room A and must reach Room D. In AI problem formulation, Room A represents the:</div>
+            <ul class="options-list">
+                <li class="option-item">Action Space</li>
+                <li class="option-item">Cost Function</li>
+                <li class="option-item">Goal State</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Initial State</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">40. The set of possible actions available to an agent is called the:</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Action Space</li>
+                <li class="option-item">Cost Function</li>
+                <li class="option-item">Goal Test</li>
+                <li class="option-item">Output Space</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">41. An autonomous robot can move North, South, East, or West inside a warehouse. In AI problem formulation, these movements represent:</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Actions</li>
+                <li class="option-item">Goal Test</li>
+                <li class="option-item">Initial State</li>
+                <li class="option-item">Transition Model</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">42. Which component describes the result of applying an action to a state?</div>
+            <ul class="options-list">
+                <li class="option-item">Cost Function</li>
+                <li class="option-item">Goal Test</li>
+                <li class="option-item">Initial State</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Transition Model</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">43. Which component evaluates the expense associated with a solution or path?</div>
+            <ul class="options-list">
+                <li class="option-item">Action Space</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Cost Function</li>
+                <li class="option-item">Goal Test</li>
+                <li class="option-item">Initial State</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">44. Which AI problem formulation component determines whether the agent has successfully solved the problem?</div>
+            <ul class="options-list">
+                <li class="option-item">Action Space</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Goal Test</li>
+                <li class="option-item">Initial State</li>
+                <li class="option-item">State Representation</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">45. During AI problem formulation, what is the PRIMARY purpose of the Goal Test?</div>
+            <ul class="options-list">
+                <li class="option-item">To calculate execution time.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>To determine whether the desired solution has been reached.</li>
+                <li class="option-item">To generate training data.</li>
+                <li class="option-item">To optimize memory usage.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">46. In AI problem formulation, what component checks whether the desired state has been reached?</div>
+            <ul class="options-list">
+                <li class="option-item">Action Space</li>
+                <li class="option-item">Cost Function</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Goal Test</li>
+                <li class="option-item">Transition Model</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">47. Suppose an AI agent has complete knowledge of all possible states but no information about which path is more promising. Which search strategy should it use?</div>
+            <ul class="options-list">
+                <li class="option-item">Greedy Search</li>
+                <li class="option-item">Heuristic Search</li>
+                <li class="option-item">Informed Search</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Uninformed Search</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">48. Uninformed search operates without:</div>
+            <ul class="options-list">
+                <li class="option-item">A goal</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Additional knowledge about which path is closer to the goal</li>
+                <li class="option-item">Possible actions</li>
+                <li class="option-item">States</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">49. Which type of search algorithm uses heuristics or extra knowledge to guide its path efficiently?</div>
+            <ul class="options-list">
+                <li class="option-item">Blind Search</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Informed Search</li>
+                <li class="option-item">Procedural Search</li>
+                <li class="option-item">Uninformed Search</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">50. Informed search improves search by using:</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Additional information or heuristics</li>
+                <li class="option-item">Flowchart symbols</li>
+                <li class="option-item">No goal information</li>
+                <li class="option-item">Random guessing only</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">51. Which statement BEST explains why informed search is generally more efficient than uninformed search?</div>
+            <ul class="options-list">
+                <li class="option-item">It eliminates all search costs.</li>
+                <li class="option-item">It evaluates every possible state.</li>
+                <li class="option-item">It ignores the goal state.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>It uses additional knowledge to guide exploration.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">52. An AI engineer wants to improve search efficiency by selecting paths that appear closer to the goal instead of exploring every possible path equally. Which search strategy should be chosen?</div>
+            <ul class="options-list">
+                <li class="option-item">Exhaustive Search</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Informed Search</li>
+                <li class="option-item">Sequential Search</li>
+                <li class="option-item">Uninformed Search</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">53. Two search methods can reach the same goal, but one uses information about which states appear more promising. This method is classified as:</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Informed Search</li>
+                <li class="option-item">Query Search</li>
+                <li class="option-item">Sequential Programming</li>
+                <li class="option-item">Uninformed Search</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">54. A chess-playing AI predicts which moves are more likely to lead to victory before expanding them. This prediction is an example of:</div>
+            <ul class="options-list">
+                <li class="option-item">Flowchart Decision</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Heuristic Evaluation</li>
+                <li class="option-item">Reinforcement Signal</li>
+                <li class="option-item">Supervised Learning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">55. An AI navigation system estimates the straight-line distance from the current location to the destination before selecting the next path. This estimate is called:</div>
+            <ul class="options-list">
+                <li class="option-item">Goal Test</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Heuristic Function</li>
+                <li class="option-item">Transition Function</li>
+                <li class="option-item">Utility Function</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">56. A smart navigation system chooses Route A because it has the lowest estimated travel time, but heavy traffic later makes Route B the better option. This illustrates that heuristic-based decisions:</div>
+            <ul class="options-list">
+                <li class="option-item">Always guarantee the optimal solution.</li>
+                <li class="option-item">Cannot be applied in AI.</li>
+                <li class="option-item">Ignore the goal state.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Use estimates that may not always be accurate.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">57. Which statement BEST differentiates Symbolic AI from Machine Learning?</div>
+            <ul class="options-list">
+                <li class="option-item">Machine Learning cannot solve classification problems.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Symbolic AI depends primarily on explicit knowledge and logical rules.</li>
+                <li class="option-item">Symbolic AI learns patterns directly from data.</li>
+                <li class="option-item">Symbolic AI requires labeled datasets.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">58. Which of the following tasks is MOST suitable for a rule-based expert system?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Diagnosing equipment faults using predefined troubleshooting rules</li>
+                <li class="option-item">Predicting stock market prices from historical trends</li>
+                <li class="option-item">Recognizing handwritten digits</li>
+                <li class="option-item">Recommending movies based on user behavior</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">59. An AI engineer must choose between a rule-based expert system and a Machine Learning model for diagnosing rare diseases. Medical experts possess extensive diagnostic rules, but only a small amount of patient data is available. Which solution is MOST appropriate?</div>
+            <ul class="options-list">
+                <li class="option-item">Deep Learning</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Rule-Based Expert System</li>
+                <li class="option-item">Supervised Learning</li>
+                <li class="option-item">Unsupervised Learning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">60. A company must choose between a traditional rule-based system and a Machine Learning model. The problem domain changes frequently, large volumes of historical data are available, and prediction accuracy is more important than explaining every decision.</div>
+            <ul class="options-list">
+                <li class="option-item">Flowchart-Based Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Machine Learning Model</li>
+                <li class="option-item">Structured Programming</li>
+                <li class="option-item">Traditional Rule-Based Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">61. A recommendation system suggests movies based on similarities among users' viewing histories. Which characteristic makes Machine Learning more suitable than traditional programming?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Ability to discover patterns from historical data</li>
+                <li class="option-item">Explicit programming rules</li>
+                <li class="option-item">Fixed decision trees written by programmers</li>
+                <li class="option-item">Manual code updates</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">62. An AI engineer is building a handwriting recognition system. Why is traditional programming NOT the best solution?</div>
+            <ul class="options-list">
+                <li class="option-item">AI systems always execute faster.</li>
+                <li class="option-item">Rule-based systems require internet connectivity.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>The rules for recognizing handwriting are too complex to define explicitly.</li>
+                <li class="option-item">Traditional programming cannot process images.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">63. A bank initially implemented a rule-based fraud detection system. Over time, fraud patterns evolved, causing detection accuracy to decrease. Which modification would MOST effectively improve the system?</div>
+            <ul class="options-list">
+                <li class="option-item">Add more IF-THEN rules manually every month.</li>
+                <li class="option-item">Convert the program into procedural code.</li>
+                <li class="option-item">Increase CPU speed.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Replace the system with a supervised learning model trained on recent fraud data.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">64. A company has a chatbot that follows only predefined IF-THEN rules. Customers frequently ask questions outside these rules, causing the chatbot to fail. Which improvement is MOST appropriate?</div>
+            <ul class="options-list">
+                <li class="option-item">Add more nested IF statements indefinitely.</li>
+                <li class="option-item">Increase the processor speed.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Replace the chatbot with a Machine Learning-based NLP model.</li>
+                <li class="option-item">Rewrite the chatbot using procedural programming.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">65. AI programming models, especially Machine Learning, primarily learn from:</div>
+            <ul class="options-list">
+                <li class="option-item">Fixed timing parameters</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Large amounts of data</li>
+                <li class="option-item">Manual updates only</li>
+                <li class="option-item">Predefined explicit rules</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">66. Machine Learning systems generally require:</div>
+            <ul class="options-list">
+                <li class="option-item">No input data</li>
+                <li class="option-item">No processing</li>
+                <li class="option-item">Only fixed rules</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Relevant data</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">67. Why is data quality important in Machine Learning systems?</div>
+            <ul class="options-list">
+                <li class="option-item">Data quality matters only in rule-based systems.</li>
+                <li class="option-item">Data quality only affects storage requirements.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>High-quality data improves the model's ability to learn meaningful patterns.</li>
+                <li class="option-item">Machine Learning ignores incorrect data.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">68. Poor-quality training data is most likely to:</div>
+            <ul class="options-list">
+                <li class="option-item">Eliminate training</li>
+                <li class="option-item">Improve predictions</li>
+                <li class="option-item">Increase hardware speed</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Reduce model performance</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">69. A Machine Learning model performs poorly because its training records contain many incorrect and missing values. What should be improved first?</div>
+            <ul class="options-list">
+                <li class="option-item">CPU clock only</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Data quality</li>
+                <li class="option-item">Programming language syntax</li>
+                <li class="option-item">Screen resolution</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">70. An online shopping company retrains its recommendation model every month using newly collected customer behavior. Why is this necessary?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Customer preferences change over time, requiring updated patterns.</li>
+                <li class="option-item">Machine Learning models automatically forget previous knowledge.</li>
+                <li class="option-item">Retraining reduces hardware requirements.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">71. A software engineer must develop a recommendation system for an online shopping platform. Customer preferences change continuously. Which approach is MOST appropriate?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Machine Learning using customer behavior data</li>
+                <li class="option-item">Manual coding of every possible recommendation</li>
+                <li class="option-item">Structured programming with fixed conditions</li>
+                <li class="option-item">Traditional rule-based programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">72. AI programming often focuses on systems that can:</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Learn and adapt</li>
+                <li class="option-item">Only follow fixed instructions</li>
+                <li class="option-item">Only store files</li>
+                <li class="option-item">Replace operating systems</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">73. Learning from labeled data to make predictions or classifications is known as:</div>
+            <ul class="options-list">
+                <li class="option-item">Heuristic Search</li>
+                <li class="option-item">Reinforcement Learning</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Supervised Learning</li>
+                <li class="option-item">Unsupervised Learning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">74. A company possesses thousands of historical customer records where each customer is labeled as either "Will Buy" or "Will Not Buy." Which Machine Learning approach is MOST suitable?</div>
+            <ul class="options-list">
+                <li class="option-item">Evolutionary Computing</li>
+                <li class="option-item">Reinforcement Learning</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Supervised Learning</li>
+                <li class="option-item">Unsupervised Learning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">75. A retail company has millions of customer purchase records but no predefined customer categories. The company wants to discover hidden purchasing patterns. Which Machine Learning approach is MOST suitable?</div>
+            <ul class="options-list">
+                <li class="option-item">Reinforcement Learning</li>
+                <li class="option-item">Supervised Learning</li>
+                <li class="option-item">Symbolic AI</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Unsupervised Learning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">76. An AI-powered self-driving car continuously receives feedback from the environment after each driving decision and improves its future actions. Which learning paradigm best describes this process?</div>
+            <ul class="options-list">
+                <li class="option-item">Declarative Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Reinforcement Learning</li>
+                <li class="option-item">Supervised Learning</li>
+                <li class="option-item">Unsupervised Learning</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">77. An AI model performs exceptionally well during training but fails to generalize to new unseen data. Which issue is MOST likely responsible?</div>
+            <ul class="options-list">
+                <li class="option-item">Declarative Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Overfitting</li>
+                <li class="option-item">Rule-Based Processing</li>
+                <li class="option-item">Underfitting</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">78. Which of the following is a classic example of traditional programming?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Calculator Application</li>
+                <li class="option-item">Image Recognition App</li>
+                <li class="option-item">Medical Diagnosis AI</li>
+                <li class="option-item">Movie Recommendation System</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">79. An ATM machine transaction is an example of:</div>
+            <ul class="options-list">
+                <li class="option-item">Data-driven AI processing</li>
+                <li class="option-item">Logic-based expert system optimization</li>
+                <li class="option-item">Machine learning pattern recognition</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Predefined (Rule-based)</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">80. Traditional programming follows which type of approach?</div>
+            <ul class="options-list">
+                <li class="option-item">Data-driven</li>
+                <li class="option-item">Heuristic</li>
+                <li class="option-item">Pattern-based</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Rule-based</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">81. Which approach is more suitable when rules are clear, stable, and completely known?</div>
+            <ul class="options-list">
+                <li class="option-item">Deep Learning</li>
+                <li class="option-item">Evolutionary programming</li>
+                <li class="option-item">Machine Learning</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Traditional programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">82. A software company is developing an application that calculates monthly electricity bills using fixed government regulations. Which programming approach is MOST appropriate?</div>
+            <ul class="options-list">
+                <li class="option-item">Machine Learning because regulations may change in the future</li>
+                <li class="option-item">Reinforcement Learning because it improves through interaction</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Rule-based traditional programming because the logic is explicitly defined</li>
+                <li class="option-item">Unsupervised Learning because customer data is available</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">83. In traditional programming, if the rules or external conditions change, what must happen?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>The developer must manually update the code</li>
+                <li class="option-item">The parallel processing style fixes it</li>
+                <li class="option-item">The program automatically adapts</li>
+                <li class="option-item">The system learns from the mistake</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">84. A programming paradigm is best described as:</div>
+            <ul class="options-list">
+                <li class="option-item">A database table</li>
+                <li class="option-item">A hardware component</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>A style or approach to programming</li>
+                <li class="option-item">An operating system</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">85. In which paradigm does the programmer specify "how" a task should be performed step-by-step?</div>
+            <ul class="options-list">
+                <li class="option-item">Declarative</li>
+                <li class="option-item">Functional</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Imperative</li>
+                <li class="option-item">Logic</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">86. Imperative programming primarily describes:</div>
+            <ul class="options-list">
+                <li class="option-item">Hardware configuration</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>How to perform a task step-by-step</li>
+                <li class="option-item">Only database queries</li>
+                <li class="option-item">What result is required only</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">87. Which programming paradigm specifies "what" the program should accomplish rather than "how"?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Declarative Programming</li>
+                <li class="option-item">Imperative Programming</li>
+                <li class="option-item">Procedural Programming</li>
+                <li class="option-item">Structured Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">88. Which paradigm is most appropriate when the programmer wants to specify the desired result without describing every execution step?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Declarative</li>
+                <li class="option-item">Imperative</li>
+                <li class="option-item">Procedural</li>
+                <li class="option-item">Structured</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">89. Declarative programming mainly focuses on:</div>
+            <ul class="options-list">
+                <li class="option-item">Every execution step</li>
+                <li class="option-item">Hardware design</li>
+                <li class="option-item">Memory installation</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>What result is required</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">90. Variables in Declarative Programming are usually:</div>
+            <ul class="options-list">
+                <li class="option-item">Dynamic pointers only</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Immutable</li>
+                <li class="option-item">Mutable</li>
+                <li class="option-item">Volatile</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">91. Functional programming is mainly based on:</div>
+            <ul class="options-list">
+                <li class="option-item">Database tables</li>
+                <li class="option-item">Flowchart symbols</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Functions</li>
+                <li class="option-item">Hardware devices</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">92. Which programming paradigm is MOST suitable when software is organized into reusable objects containing both data and methods?</div>
+            <ul class="options-list">
+                <li class="option-item">Functional Programming</li>
+                <li class="option-item">Logic Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Object-Oriented Programming (OOP)</li>
+                <li class="option-item">Query Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">93. A developer wants to model students as reusable entities containing attributes and functions. Which paradigm is most suitable?</div>
+            <ul class="options-list">
+                <li class="option-item">Constraint Programming</li>
+                <li class="option-item">Logic Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Object-Oriented Programming</li>
+                <li class="option-item">Query Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">94. In Object-Oriented Programming, data and related methods are grouped into:</div>
+            <ul class="options-list">
+                <li class="option-item">Flowcharts</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Objects</li>
+                <li class="option-item">Queries</li>
+                <li class="option-item">Rules only</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">95. Which of the following is a subdomain of the Imperative Paradigm?</div>
+            <ul class="options-list">
+                <li class="option-item">Constraint Programming</li>
+                <li class="option-item">Functional Programming</li>
+                <li class="option-item">Logic Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Object-Oriented Programming (OOP)</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">96. Prolog is a well-known example of which programming subdomain?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Logic Programming</li>
+                <li class="option-item">Modular Programming</li>
+                <li class="option-item">Procedural Programming</li>
+                <li class="option-item">Query Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">97. A system represents relationships as facts and applies rules to infer new information. Which programming approach best fits this system?</div>
+            <ul class="options-list">
+                <li class="option-item">Flowchart Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Logic Programming</li>
+                <li class="option-item">Procedural Programming</li>
+                <li class="option-item">Query Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">98. SQL is a primary example of which type of programming subdomain?</div>
+            <ul class="options-list">
+                <li class="option-item">Constraint Programming</li>
+                <li class="option-item">Functional Programming</li>
+                <li class="option-item">Logic Programming</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Query Programming</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">99. Query programming is primarily used to:</div>
+            <ul class="options-list">
+                <li class="option-item">Control motors</li>
+                <li class="option-item">Create sensors</li>
+                <li class="option-item">Design processors</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Retrieve and manipulate data</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">100. A database administrator writes the following SQL statement: SELECT Name FROM Students WHERE GPA > 3.5; Why is SQL considered a declarative language?</div>
+            <ul class="options-list">
+                <li class="option-item">Because it specifies how the database engine should search each record.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Because it specifies what result is required without describing the execution procedure.</li>
+                <li class="option-item">Because SQL always executes sequentially.</li>
+                <li class="option-item">Because SQL uses procedural loops.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">101. What is the first step in the traditional software problem-solving life cycle?</div>
+            <ul class="options-list">
+                <li class="option-item">Coding the solution</li>
+                <li class="option-item">Planning the design</li>
+                <li class="option-item">Testing the code</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Understanding and analyzing the problem</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">102. A developer writes code before clearly identifying the required inputs, outputs, and problem requirements. Which important stage was skipped?</div>
+            <ul class="options-list">
+                <li class="option-item">Code compilation</li>
+                <li class="option-item">Execution</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Problem analysis</li>
+                <li class="option-item">Testing only</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">103. The traditional software problem-solving life cycle phase where actual "coding" takes place is called:</div>
+            <ul class="options-list">
+                <li class="option-item">Data Analysis</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Execute</li>
+                <li class="option-item">Plan</li>
+                <li class="option-item">Test</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">104. A flowchart is a:</div>
+            <ul class="options-list">
+                <li class="option-item">Database system</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Graphical representation of an algorithm</li>
+                <li class="option-item">Machine Learning model</li>
+                <li class="option-item">Programming language</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">105. A programmer wants to represent the steps of an algorithm visually. Which tool should be used?</div>
+            <ul class="options-list">
+                <li class="option-item">Compiler</li>
+                <li class="option-item">Database</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Flowchart</li>
+                <li class="option-item">Sensor</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">106. Which statement BEST describes the relationship between algorithms and flowcharts?</div>
+            <ul class="options-list">
+                <li class="option-item">Algorithms are only used in AI applications.</li>
+                <li class="option-item">A flowchart replaces the need for an algorithm.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Algorithms describe logical steps while flowcharts provide a graphical representation of those steps.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">107. What does the "Oval" symbol represent in a standard flowchart?</div>
+            <ul class="options-list">
+                <li class="option-item">Flow Direction</li>
+                <li class="option-item">Input / Output</li>
+                <li class="option-item">Process</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Start / End</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">108. Which flowchart symbol normally represents Start or End?</div>
+            <ul class="options-list">
+                <li class="option-item">Diamond</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Oval</li>
+                <li class="option-item">Parallelogram</li>
+                <li class="option-item">Rectangle</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">109. In a flowchart, a "Rectangle" is used to represent a:</div>
+            <ul class="options-list">
+                <li class="option-item">Decision step</li>
+                <li class="option-item">Input action</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Process or operation</li>
+                <li class="option-item">Start point</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">110. In a flowchart, which symbol represents a "Decision"?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Diamond</li>
+                <li class="option-item">Oval</li>
+                <li class="option-item">Parallelogram</li>
+                <li class="option-item">Rectangle</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">111. Which flowchart symbol represents "Input / Output" operations?</div>
+            <ul class="options-list">
+                <li class="option-item">Arrow</li>
+                <li class="option-item">Diamond</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Parallelogram</li>
+                <li class="option-item">Rectangle</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">112. An arrow in a flowchart is used to indicate:</div>
+            <ul class="options-list">
+                <li class="option-item">Decision</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Direction of flow</li>
+                <li class="option-item">Input only</li>
+                <li class="option-item">Start and End</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">113. A developer is debugging a flowchart and notices that every decision node has only one outgoing arrow. What is the MOST likely problem?</div>
+            <ul class="options-list">
+                <li class="option-item">The algorithm is optimized.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>The decision logic is incomplete because alternative outcomes are missing.</li>
+                <li class="option-item">The flowchart represents declarative programming.</li>
+                <li class="option-item">The flowchart will execute faster.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">114. Python is a:</div>
+            <ul class="options-list">
+                <li class="option-item">Database only</li>
+                <li class="option-item">Flowchart symbol</li>
+                <li class="option-item">Hardware device</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>High-level programming language</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">115. Which language is currently considered the dominant preference for modern AI development?</div>
+            <ul class="options-list">
+                <li class="option-item">C++</li>
+                <li class="option-item">Lisp</li>
+                <li class="option-item">Prolog</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Python</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">116. Python is widely used in AI because it is:</div>
+            <ul class="options-list">
+                <li class="option-item">Difficult to read</li>
+                <li class="option-item">Limited to hardware design</li>
+                <li class="option-item">Only a database language</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Simple and supported by many libraries</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">117. Which statement best explains why Python is considered versatile according to the lecture?</div>
+            <ul class="options-list">
+                <li class="option-item">It is designed only for mathematical calculations.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>It supports applications including AI, Data Science, Web Development, Automation, and IoT.</li>
+                <li class="option-item">It can only run on Linux.</li>
+                <li class="option-item">It can only be used for AI applications.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">118. A Python development environment is mainly used to:</div>
+            <ul class="options-list">
+                <li class="option-item">Manufacture processors</li>
+                <li class="option-item">Replace algorithms</li>
+                <li class="option-item">Store physical objects</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Write and execute Python code</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">119. Python code is executed using a:</div>
+            <ul class="options-list">
+                <li class="option-item">Database table</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Interpreter</li>
+                <li class="option-item">Motor</li>
+                <li class="option-item">Sensor</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">120. What is the main purpose of the Python interpreter?</div>
+            <ul class="options-list">
+                <li class="option-item">To create databases</li>
+                <li class="option-item">To convert Python into HTML</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>To execute Python instructions and produce output</li>
+                <li class="option-item">To permanently store variables</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">121. Which file extension is normally used for Python source files?</div>
+            <ul class="options-list">
+                <li class="option-item">.pyn</li>
+                <li class="option-item">.python</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>.py</li>
+                <li class="option-item">.pt</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">122. Which sequence best describes how a Python source file is normally handled?</div>
+            <ul class="options-list">
+                <li class="option-item">Write Python code → Save as .txt → Run using Jupyter only</li>
+                <li class="option-item">Write Python code → Save as.html → Run using browser</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Write Python code → Save as .py → Run using Python interpreter</li>
+                <li class="option-item">Write Python code → Save as .exe → Run using database</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">123. Which pairing is correct?</div>
+            <ul class="options-list">
+                <li class="option-item">PyCharm → only Python comments</li>
+                <li class="option-item">VS Code → Python in the cloud</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Google Colab → Python in the cloud, AI & ML</li>
+                <li class="option-item">Jupyter Notebook → Professional Python projects</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">124. What happens to a Python single-line comment during program execution?</div>
+            <ul class="options-list">
+                <li class="option-item">It becomes a variable</li>
+                <li class="option-item">It is executed as an instruction</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>It is ignored by the interpreter</li>
+                <li class="option-item">It produces output</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">125. Which statement about triple quotes in Python is most accurate?</div>
+            <ul class="options-list">
+                <li class="option-item">They are ignored completely by the interpreter.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>They create multi-line string literals commonly used as docstrings.</li>
+                <li class="option-item">They are Python's official multi-line comment syntax.</li>
+                <li class="option-item">They can only be used inside loops.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">126. Which statement demonstrates an important distinction between comments and triple-quoted strings?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>Comments use #, while triple quotes create string literals.</li>
+                <li class="option-item">Comments can only appear before code.</li>
+                <li class="option-item">Triple quotes are executed as arithmetic expressions.</li>
+                <li class="option-item">Both are technically comments in Python.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">127. A variable in Python is used to:</div>
+            <ul class="options-list">
+                <li class="option-item">Create hardware</li>
+                <li class="option-item">Draw a flowchart</li>
+                <li class="option-item">Replace the interpreter</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Store a value</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">128. Which statement correctly assigns the value 10 to a variable named x?</div>
+            <ul class="options-list">
+                <li class="option-item">10 = x</li>
+                <li class="option-item">x : 10</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>x = 10</li>
+                <li class="option-item">x == 10</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">129. After executing x = 5 followed by x = 8, what is the value of x?</div>
+            <ul class="options-list">
+                <li class="option-item">5</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>8</li>
+                <li class="option-item">13</li>
+                <li class="option-item">Undefined</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">130. After a = 4, b = a, and then a = 7 what value is stored in b?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>4</li>
+                <li class="option-item">7</li>
+                <li class="option-item">11</li>
+                <li class="option-item">Undefined</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">131. Consider: x = 25, y = x, x = 50. Which statement best reflects the concept of variables?</div>
+            <ul class="options-list">
+                <li class="option-item">Python generates a syntax error because x is reassigned.</li>
+                <li class="option-item">y must automatically become 50.</li>
+                <li class="option-item">x and y are permanently linked.</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Variables can be reassigned to different values.</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">132. Which Python data type is used for whole numbers?</div>
+            <ul class="options-list">
+                <li class="option-item">bool</li>
+                <li class="option-item">float</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>int</li>
+                <li class="option-item">str</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">133. Which data type is commonly used for decimal numbers in Python?</div>
+            <ul class="options-list">
+                <li class="option-item">bool</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>float</li>
+                <li class="option-item">list</li>
+                <li class="option-item">str</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">134. What is the most appropriate data type for the value 3.75?</div>
+            <ul class="options-list">
+                <li class="option-item">bool</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>float</li>
+                <li class="option-item">int</li>
+                <li class="option-item">str</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">135. Text values in Python are commonly represented using:</div>
+            <ul class="options-list">
+                <li class="option-item">bool</li>
+                <li class="option-item">float</li>
+                <li class="option-item">int</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>str</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">136. A Boolean value in Python represents:</div>
+            <ul class="options-list">
+                <li class="option-item">A collection only</li>
+                <li class="option-item">Decimal values only</li>
+                <li class="option-item">Only text</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>True or False</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">137. A program stores age as 20, temperature as 36.5, and status as True. Which sequence of data types is correct?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>int, float, bool</li>
+                <li class="option-item">str, int, float</li>
+                <li class="option-item">str, int, float</li>
+                <li class="option-item">bool</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">138. Which option correctly identifies the data types? a="AI", b=20, c=3.5, d=True, e=None</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>str, int, float, bool, NoneType</li>
+                <li class="option-item">str, float, int, boolean, NoneType</li>
+                <li class="option-item">char, integer, real, boolean, null</li>
+                <li class="option-item">string, float, integer, bool, None</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">139. What is the output of the following code? x="10", print(type(x))</div>
+            <ul class="options-list">
+                <li class="option-item">&lt;class 'float'&gt;</li>
+                <li class="option-item">&lt;class 'bool'&gt;</li>
+                <li class="option-item">&lt;class 'int'&gt;</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>&lt;class 'str'&gt;</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">140. Which Python function is commonly used to display output?</div>
+            <ul class="options-list">
+                <li class="option-item">input()</li>
+                <li class="option-item">list()</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>print()</li>
+                <li class="option-item">type()</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">141. What is the purpose of print("Hello")?</div>
+            <ul class="options-list">
+                <li class="option-item">Create a comment</li>
+                <li class="option-item">Delete Hello</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Display Hello</li>
+                <li class="option-item">Store Hello automatically</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">142. If name = "Ali" what does print(name) display?</div>
+            <ul class="options-list">
+                <li class="option-item">"name"</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Ali</li>
+                <li class="option-item">name</li>
+                <li class="option-item">Nothing</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">143. What is the output of the following code? print("Age:", 20)</div>
+            <ul class="options-list">
+                <li class="option-item">Age 20</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Age: 20</li>
+                <li class="option-item">"Age:", 20</li>
+                <li class="option-item">Age:20</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">144. Which collection is appropriate when several related values need to be stored together in one variable?</div>
+            <ul class="options-list">
+                <li class="option-item">Boolean only</li>
+                <li class="option-item">Comment</li>
+                <li class="option-item">Interpreter</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>List</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">145. Which Python collection stores multiple items in an ordered form?</div>
+            <ul class="options-list">
+                <li class="option-item">Boolean</li>
+                <li class="option-item">Comment</li>
+                <li class="option-item">Float</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>List</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">146. Which symbols are commonly used to create a Python list?</div>
+            <ul class="options-list">
+                <li class="option-item">( )</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>[ ]</li>
+                <li class="option-item">{ }</li>
+                <li class="option-item">&lt; &gt;</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">147. Which Python collection is commonly written using parentheses?</div>
+            <ul class="options-list">
+                <li class="option-item">Integer</li>
+                <li class="option-item">List</li>
+                <li class="option-item">String</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Tuple</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">148. A programmer chooses between a list and a tuple for data that must remain fixed after creation. Which choice is most appropriate?</div>
+            <ul class="options-list">
+                <li class="option-item">List, because it is immutable</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Tuple, because it is ordered and fixed</li>
+                <li class="option-item">Dictionary, because it is always immutable</li>
+                <li class="option-item">Set, because it stores key-value pairs</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">149. Which Python collection stores key-value pairs?</div>
+            <ul class="options-list">
+                <li class="option-item">Boolean</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Dictionary</li>
+                <li class="option-item">Integer</li>
+                <li class="option-item">Tuple</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">150. A programmer needs to store a student's name together with a corresponding grade as key-value data. Which collection is most suitable?</div>
+            <ul class="options-list">
+                <li class="option-item">Boolean</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>Dictionary</li>
+                <li class="option-item">Float</li>
+                <li class="option-item">Integer</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">151. A programmer wants to store several names and then display the collection. Which combination is most appropriate?</div>
+            <ul class="options-list">
+                <li class="option-item">Boolean and comment</li>
+                <li class="option-item">Float and interpreter</li>
+                <li class="option-item">Integer and flowchart</li>
+                <li class="option-item correct"><span class="check-icon">✅</span>List and print()</li>
+            </ul>
+        </div>
+        <div class="question-card">
+            <div class="question-text">152. Which scenario best demonstrates the combined use of a variable, data type, collection, and print() function?</div>
+            <ul class="options-list">
+                <li class="option-item correct"><span class="check-icon">✅</span>student = ["Ali", 20] print(student)</li>
+                <li class="option-item">None</li>
+                <li class="option-item">#student</li>
+                <li class="option-item">Student</li>
+            </ul>
+        </div>
 
     </div>
 
@@ -93,7 +1453,7 @@
         <h2>🎉 Quiz Completed! 🎉</h2>
         <div class="score-circle">
             <span class="score-num" id="final-score-val">0</span>
-            <span class="score-total" id="final-total-val"></span>
+            <span class="score-total" id="final-total-val">/ 152</span>
         </div>
         <div class="percentage-text" id="final-percentage-val">Score: 0%</div>
         <button class="restart-btn" onclick="location.reload()">🔄 Retake Quiz</button>
@@ -108,7 +1468,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalQuestions = cards.length;
     
     if(totalQuestions === 0) {
-        document.getElementById('progress-text').innerText = "لا توجد أسئلة!";
+        document.getElementById('progress-text').innerText = "No questions found!";
         return;
     }
 
@@ -156,6 +1516,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let answered = false;
 
         options.forEach(option => {
+            // Remove preexisting static checkmarks to prevent duplication
+            const checkIcon = option.querySelector('.check-icon');
+            if (checkIcon) checkIcon.remove();
+
             option.addEventListener('click', () => {
                 if (answered) return;
                 answered = true;
